@@ -2,5 +2,5 @@
 A Bootcamp assigned homework assignment.
 
 Changes since last version:
-- Added code to HMTL file
-- Added CSS and Javascript files
+- Added psuedo code to Javascript file
+- Added onkeyup alert to Javascript
