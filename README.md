@@ -2,4 +2,5 @@
 A Bootcamp assigned homework assignment.
 
 Changes since last version:
-- Added HTML file
+- Added code to HMTL file
+- Added CSS and Javascript files
