@@ -2,4 +2,5 @@
 A Bootcamp assigned homework assignment.
 
 Changes since last version:
-- Added Pseudo code to JS file
+- Added Batman theme to HTML.
+- Added array containing strings of Batman villians.
