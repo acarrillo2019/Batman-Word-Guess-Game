@@ -2,4 +2,4 @@
 A Bootcamp assigned homework assignment.
 
 Changes since last version:
-- Added basic files
+- Added Pseudo code to JS file
