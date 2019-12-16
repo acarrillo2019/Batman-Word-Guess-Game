@@ -29,5 +29,10 @@ Parts that make up game:
 
 $(document).ready(function() {
 
+    // Array containing names of Batman villians and characters.
+
+    var badguys = ["The Joker", "Penguin", "Riddler", "Azrael", "Professor Pyg", "Firefly", "Ra's Al Ghul", 
+                            "Deathstroke", "Harley Quinn", "Scarecrow", "Two-Face", "Killer Croc", "Mad Hatter", "Poison Ivy",
+                            "Man-bat", "Poison Ivy", "Mr. Freeze", "Hush", "Red Hood", "Bane", "Arkham Knight"]
 
 })
