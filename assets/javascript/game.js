@@ -36,3 +36,16 @@ $(document).ready(function() {
                             "Man-bat", "Poison Ivy", "Mr. Freeze", "Hush", "Red Hood", "Bane", "Arkham Knight"]
 
 })
+
+// Global variables
+
+const maxGuess = 5 //Number of guesses
+var pauseGame = false // Game pause. Starts as false because when you WANT to pause, it will return "true"
+
+var guessedLetters = []
+var guessingWord = []
+var wordToMatch
+var numGuess
+var wins = 0
+
+resetGame()
