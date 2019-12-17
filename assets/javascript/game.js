@@ -40,7 +40,7 @@ $(document).ready(function() {
 // Global variables
 
 const maxGuess = 5 //Number of guesses
-var pauseGame = false // Game pause. Starts as false because when you WANT to pause, it will return "true"
+var pauseGame = false // Game pause. Starts as false so akey must be pressed to start game, it will return "true"
 
 var guessedLetters = []
 var guessingWord = []
@@ -49,3 +49,11 @@ var numGuess
 var wins = 0
 
 resetGame()
+
+// Start game on key press
+document.onkeypress = function(event) {
+    // Make sure key pressed is an alpha character
+    if (isAlpha(event.key) && !pauseGame) {
+        checkForLetter(event.key.toUpperCase())
+    }
+}
