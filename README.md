@@ -2,4 +2,4 @@
 A Bootcamp assigned homework assignment.
 
 Changes since last version:
-- Added global variables for game mechanics
+- Added game start/ pause to JS file
