@@ -2,5 +2,7 @@
 A Bootcamp assigned homework assignment to make a Word Guess Game.
 
 Changes since last version:
-- Finished game mechanics in Javascript
-- Added html elements
+- Added Bootstrap
+- Added Meyer reset
+- Added additional styling
+- Created and added Batman montage background
