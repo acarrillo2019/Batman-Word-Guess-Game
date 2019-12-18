@@ -1,7 +1,9 @@
 body {
+    background-color: black;
     background-image: url(../images/batman_back.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  /*  background-repeat: no-repeat;*/
+    background-size: contain; 
+       background-position: center; 
     height: 100vh;
     color: yellow;
     display: flex;
@@ -10,12 +12,18 @@ body {
 .container {
     margin: auto;
     text-align: center;
+    margin-top: 14%;
 }
 
 .heador {
     text-align: center;
     color: yellow;
     font-size: 100px;
+    font-weight: bolder;
+    color: black;
+  -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .instructions-row {
@@ -23,4 +31,26 @@ color: yellow;
 size: 200px;
 margin: 0 auto;
 padding: 20px;
+font-size: 20px;
 }
+
+.word-block {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        background-repeat: repeat;
+    background-size: cover; 
+       background-position: center; 
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .container {
+        background-repeat: repeat;
+    background-size: contain; 
+       background-position: center;
+       padding: 40px;
+    }
+  }
