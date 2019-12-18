@@ -112,7 +112,7 @@ var pauseGame = false // Game pause. Starts as false til key
                 guessingWord = wordToMatch.split()
                 pauseGame = true
                 loseSound.play()
-                setTimeout(resetGame, 7000)
+                setTimeout(resetGame, 4000)
             }
         }
 
