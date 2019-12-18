@@ -2,4 +2,5 @@
 A Bootcamp assigned homework assignment to make a Word Guess Game.
 
 Changes since last version:
-- Dialed in styling
+- Added win and lose sounds
+- Corrected instructions bullets
