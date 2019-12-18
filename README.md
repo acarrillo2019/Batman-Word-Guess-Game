@@ -3,6 +3,8 @@ A Bootcamp assigned homework assignment to make a Word Guess Game.
 
 Word Guess Game is a simple version of a hangman style game. The purpose of this assignment was to create a word guess game using Javascript.
 
+Link to <a href="https://acarrillo2019.github.io/Word-Guess-Game/">Game.</a>
+
 How to Play:
 
 Press any Alphabet key to start game. Non alpha keys are ignored. The theme of the game is 'Batman: Guess the Villian'. The game will randomly select a Batman villian. A blank word is displayed using underscores to represent the letters in the word. It is possible to have a multi-named villian such as Arkham Knight.
