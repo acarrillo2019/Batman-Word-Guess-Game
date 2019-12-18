@@ -8,32 +8,55 @@
     <title>Word Guess Game</title>
 </head>
 <body>
-    <header class="heador"><h1>GUESS THE VILLIAN!!!</h1></header>
+    
 
-    <table class="instructions-row">
-        <tr>
-          <td class="instructions-number">1.</td>
-          <td class="instructions-text">Help Batman solve the crime and save Gotham City! Guess the name of the villain who is causing havoc in Gotham so Batman can stop them.</td>
-        </tr>
-        <tr>
-          <td class="instructions-number">2.</td>
-          <td class="instructions-text">Use the letters on your keyboard to guess the villian.</td>
-        </tr>
-        <tr>
-          <td class="instructions-number">3.</td>
-          <td class="instructions-text">You can only get 5 wrong guesses before Batman leaves to solve the crime himself.</td>
-        </tr>
-        <tr>
-          <td class="instructions-number">4.</td>
-          <td class="instructions-text">If you run out of guesses, you lose. If you guess the correct villian, you have just helped Batman to save Gotham City!</td>
-        </tr>
-      </table>
-      <div class="word"></div>
-      <div class="remaining-guesses"></div>
-      <div class="guessed-wrong"></div>
+      <div class="container">
+
+        <header class="heador"><h1>GUESS THE VILLIAN!!!</h1></header>
+
+        <table class="instructions-row">
+            <tr>
+              <td class="instructions-number">1.</td>
+              <td class="instructions-text">Help Batman solve the crime and save Gotham City! Guess the name of the villain who is causing havoc in Gotham so Batman can stop them.</td>
+            </tr>
+            <tr>
+              <td class="instructions-number">2.</td>
+              <td class="instructions-text">Use the letters on your keyboard to guess the villian.</td>
+            </tr>
+            <tr>
+              <td class="instructions-number">3.</td>
+              <td class="instructions-text">You can only get 5 wrong guesses before Batman leaves to solve the crime himself.</td>
+            </tr>
+            <tr>
+              <td class="instructions-number">4.</td>
+              <td class="instructions-text">If you run out of guesses, you lose. If you guess the correct villian, you have just helped Batman to save Gotham City!</td>
+            </tr>
+            <tr>
+              <td class="instructions-number">5.</td>
+              <td class="instructions-text">Press any key to get started!</td>
+            </tr>
+          </table>
+          <div class="word"></div>
+          <div class="remaining-guesses"></div>
+          <div class="guessed-wrong"></div>
+
+        <!-- When user presses any key, start game -->
+        <h4>Wins</h4>
+        <div id="totalWins"></div>
+        <h4>Current Word</h4>
+        <div id="currentWord"></div>
+        <h4>Guesses Remaining</h4>
+        <div id="remainingGuesses"></div>
+        <h4>Letters Guessed</h4>
+        <div id="guessedLetters"></div>
+
+    </div>
 
 
 
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>    
+      <script src="assets/javascript/game.js"></script>
 </body>
 </html>
