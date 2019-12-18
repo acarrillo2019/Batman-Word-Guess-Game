@@ -34,7 +34,7 @@ Parts that make up game:
 $(document).ready(function() {
 
     var badGuys = ["The Joker", "Penguin", "Riddler", "Azrael", "Professor Pyg", "Firefly", "Ras Al Ghul", 
-                            "Deathstroke", "Harley Quinn", "Scarecrow", "Two-Face", "Killer Croc", "Mad Hatter", "Poison Ivy",
+                            "Deathstroke", "Harley Quinn", "Scarecrow", "Two Face", "Killer Croc", "Mad Hatter", "Poison Ivy",
                             "Man bat", "Poison Ivy", "Mr Freeze", "Hush", "Red Hood", "Bane", "Arkham Knight"]
 
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
 // Global variables
 
 const maxGuess = 5 //Number of guesses
-var pauseGame = false // Game pause. Starts as false so akey must be pressed to start game, it will return "true"
+var pauseGame = false // Game pause. Starts as false til key
 
 
 
@@ -64,14 +64,21 @@ var pauseGame = false // Game pause. Starts as false so akey must be pressed to 
         }
     }
 
+
+
+    
     // Game Functions
     // Check if letter is in word & process
     function checkForLetter(letter) {
         var foundLetter = false
         var correctSound = document.createElement("audio")
         var incorrectSound = document.createElement("audio")
+        var winSound = document.createElement("audio")
+        var loseSound = document.createElement("audio")
         correctSound.setAttribute("src", "assets/sounds/stairs.mp3")
         incorrectSound.setAttribute("src","assets/sounds/croak.mp3")
+        winSound.setAttribute("src", "assets/sounds/chimes1.wav")
+        loseSound.setAttribute("src", "assets/sounds/brokendroids.wav")
 
         // Search string for letter
         for (var i=0, j= wordToMatch.length; i<j; i++) {
@@ -84,8 +91,9 @@ var pauseGame = false // Game pause. Starts as false so akey must be pressed to 
                     // Increment # of wins
                     wins++
                     pauseGame = true
+                    winSound.play()
                     updateDisplay()
-                    setTimeout(resetGame,5000)
+                    setTimeout(resetGame,2000)
                 }
             }
         }
@@ -103,7 +111,8 @@ var pauseGame = false // Game pause. Starts as false so akey must be pressed to 
                 // Display word before reseting game
                 guessingWord = wordToMatch.split()
                 pauseGame = true
-                setTimeout(resetGame, 5000)
+                loseSound.play()
+                setTimeout(resetGame, 7000)
             }
         }
 
@@ -121,7 +130,7 @@ var pauseGame = false // Game pause. Starts as false so akey must be pressed to 
 
         // Get a new word
         wordToMatch = badGuys[Math.floor(Math.random() * badGuys.length)].toUpperCase()
-        console.log(wordToMatch)
+        
 
         // Reset word arrays
         guessedLetters = []

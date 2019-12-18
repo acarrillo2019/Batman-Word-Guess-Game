@@ -12,7 +12,7 @@ body {
 .container {
     margin: auto;
     text-align: center;
-    margin-top: 14%;
+    margin-top: 12%;
     position: relative;
     width: 100%;
     
@@ -35,6 +35,10 @@ size: 200px;
 margin: 0 auto;
 padding: 20px;
 font-size: 20px;
+font-weight: bolder;
+-webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .word-block {
