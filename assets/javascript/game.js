@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     var badGuys = ["The Joker", "Penguin", "Riddler", "Azrael", "Professor Pyg", "Firefly", "Ras Al Ghul", 
                             "Deathstroke", "Harley Quinn", "Scarecrow", "Two Face", "Killer Croc", "Mad Hatter", "Poison Ivy",
-                            "Man bat", "Poison Ivy", "Mr Freeze", "Hush", "Red Hood", "Bane", "Arkham Knight"]
+                            "Man bat", "Poison Ivy", "Mr Freeze", "Hush", "Red Hood", "Bane", "Clayface", "Solomon Grundy", "Arkham Knight"]
 
 
 
