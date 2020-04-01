@@ -5,6 +5,8 @@ Link to <a href="https://acarrillo2019.github.io/Word-Guess-Game/">Game.</a>
 
 # BATMAN: Guess the Villian
 
+![](/screenshots/bt_1.PNG)
+
 How to Play:
 
 Press any Alphabet key to start game. Non alpha keys are ignored. The theme of the game is 'Batman: Guess the Villian'. The game will randomly select a Batman villian. A blank word is displayed using underscores to represent the letters in the word. It is possible to have a multi-named villian such as Arkham Knight.
