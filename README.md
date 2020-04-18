@@ -1,7 +1,7 @@
 # Word-Guess-Game
 Word Guess Game is a simple version of a hangman style game. The purpose of this assignment was to create a word guess game using Javascript.
 
-Link to <a href="https://acarrillo2019.github.io/Word-Guess-Game/">Game.</a>
+Link to <a href="https://acarrillo2019.github.io/Batman-Word-Guess-Game/">Game.</a>
 
 # BATMAN: Guess the Villian
 
